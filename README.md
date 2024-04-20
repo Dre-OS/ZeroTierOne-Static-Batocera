@@ -3,7 +3,7 @@ This project provides static [Zerotier-One](https://github.com/zerotier/ZeroTier
 
 # Setup
 *To install ZeroTier-One on Batocera you can follow: [Batocera](Batocera.md)*
-*in batocera `batocera-save-overlay` is needed to save modified system files, for more info, please see: [Batocera Wiki](https://wiki.batocera.org/modify_the_system_while_it_s_running)
+*in batocera `batocera-save-overlay` is needed to save modified system files, for more info, please see: [Batocera Wiki](https://wiki.batocera.org/modify_the_system_while_it_s_running)*
 
 Download latest release:
 ```sh
