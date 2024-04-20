@@ -15,8 +15,6 @@ install it to bin:
 ```sh
 mkdir ~/bin
 tar -xzf zerotier-one-aarch64.tar.gz bin/zerotier-one -C ./bin
-cd ~/bin
-cd ..
 install bin/* /bin
 ```
 
