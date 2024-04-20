@@ -25,6 +25,11 @@ ln -s zerotier-one zerotier-cli
 ln -s zerotier-one zerotier-idtool
 ```
 
+Finally, save overlay
+```sh
+batocera-save-overlay
+```
+
 # Building
 To build latest version run:
 ```sh
