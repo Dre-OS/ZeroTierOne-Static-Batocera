@@ -1,5 +1,5 @@
 # Batocera installation
-## Install script
+## Install script 
  - Add initializing script (custom.sh)
 ```sh
 curl https://raw.githubusercontent.com/Dre-OS/ZeroTierOne-Static-Batocera/main/custom.sh >> custom.sh
@@ -10,6 +10,7 @@ bash <(curl -s https://raw.githubusercontent.com/Dre-OS/ZeroTierOne-Static-Batoc
 ```
 
 ## Manual
+*For x86_64 Versions of Batocera, please use zerotier-one-aarch64.tar.gz*
 ```sh
 
 # Download zerotier
