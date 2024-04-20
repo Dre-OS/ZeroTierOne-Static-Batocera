@@ -1,5 +1,9 @@
 # Batocera installation
 ## Install script
+ - Add initializing script (custom.sh)
+```sh
+curl https://raw.githubusercontent.com/Dre-OS/ZeroTierOne-Static-Batocera/main/custom.sh >> custom.sh
+```
  - Run script
 ```sh
 bash <(curl -s https://raw.githubusercontent.com/Dre-OS/ZeroTierOne-Static-Batocera/main/Batocera.sh)
@@ -7,8 +11,6 @@ bash <(curl -s https://raw.githubusercontent.com/Dre-OS/ZeroTierOne-Static-Batoc
 
 ## Manual
 ```sh
-# Create and enter zerotier data directory
-mkdir ~/.zerotier-one && cd ~/.zerotier-one
 
 # Download zerotier
 curl -LJO https://github.com/Dre-OS/ZeroTierOne-Static-Batocera/releases/latest/download/zerotier-one-aarch64.tar.gz
@@ -23,7 +25,15 @@ install bin/* /bin
 # If you want, you can remove the archive
 rm zerotier-one-aarch64.tar.gz
 
-# Enable service
+# Generate configs
+zerotier-one
+pkill zerotier-one
+
+# Add configs to /userdata/system
+mv "$LINK_OR_DIR" "$DEST_DIR"
+ln -s "$DEST_DIR" "$LINK_OR_DIR"
+
+# Start Zerotier
 zerotier-one
 ```
 
