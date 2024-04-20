@@ -6,7 +6,7 @@ This project provides static [Zerotier-One](https://github.com/zerotier/ZeroTier
 
 Download latest release:
 ```sh
-curl -LJO https://github.com/rafalb8/ZeroTierOne-Static/releases/latest/download/zerotier-one-aarch64.tar.gz
+curl -LJO https://github.com/Dre-OS/ZeroTierOne-Static-Batocera/releases/latest/download/zerotier-one-aarch64.tar.gz
 ```
 
 install it to bin:
