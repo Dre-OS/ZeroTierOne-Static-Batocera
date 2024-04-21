@@ -27,6 +27,14 @@ install bin/* /usr/bin
 # If you want, you can remove the archive
 rm zerotier-one-aarch64.tar.gz
 
+# add links to cli and idtool
+cd "/usr/bin" || exit
+ln -s zerotier-one zerotier-cli
+ln -s zerotier-one zerotier-idtool
+
+# save overlay
+batocera-save-overlay
+
 # Generate configs
 zerotier-one
 pkill zerotier-one
