@@ -4,9 +4,6 @@ LINK_OR_DIR="/usr/lib/zerotier-one"
 DEST_DIR="/userdata/system/configs/zerotier"
 SYS_ARCH=$(arch)
 
-# logging
-bash 2>&1 | tee ~/batocera.log
-
 # Download zerotier
 if [ $SYS_ARCH == "aarch64" ]; then
     curl -LJO https://github.com/Dre-OS/ZeroTierOne-Static-Batocera/releases/latest/download/zerotier-one-aarch64.tar.gz
@@ -45,3 +42,6 @@ ln -s "$DEST_DIR" "$LINK_OR_DIR"
 
 # Start Zerotier
 zerotier-one
+
+# logging
+# bash 2>&1 | tee ~/batocera.log
