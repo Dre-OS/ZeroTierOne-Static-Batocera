@@ -4,13 +4,13 @@
 chmod u+x /bin/zerotier-one
 chmod u+x /bin/zerotier-cli
 
-LINK_OR_DIR="/var/lib/zerotier-one"
+LINK_OR_DIR="/usr/lib/zerotier-one"
 DEST_DIR="/userdata/system/configs/zerotier"
 
 createConfig(){
   zerotier-one
   if [ ! -d "$DEST_DIR" ]; then
-	mkdir "$DEST_DIR"
+	  mkdir "$DEST_DIR"
   fi
   mv "$LINK_OR_DIR" "$DEST_DIR"
   ln -s "$DEST_DIR" "$LINK_OR_DIR"
@@ -20,7 +20,7 @@ createConfig(){
 
 verifyDest(){
   if [ -d "$DEST_DIR" ]; then
-	ln -s "$DEST_DIR" "$LINK_OR_DIR"
+	  ln -s "$DEST_DIR" "$LINK_OR_DIR"
   fi
   zerotier-one
 }
