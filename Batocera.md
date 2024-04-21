@@ -6,7 +6,8 @@ curl https://raw.githubusercontent.com/Dre-OS/ZeroTierOne-Static-Batocera/main/c
 ```
  - Run script
 ```sh
-bash <(curl -s https://raw.githubusercontent.com/Dre-OS/ZeroTierOne-Static-Batocera/main/Batocera.sh) | logs.log
+curl -LJO https://raw.githubusercontent.com/Dre-OS/ZeroTierOne-Static-Batocera/main/Batocera.sh
+./Batocera.sh | tee ./batocera.log
 ```
 
 ## Manual
@@ -16,8 +17,6 @@ LINK_OR_DIR="/usr/lib/zerotier-one"
 DEST_DIR="/userdata/system/configs/zerotier"
 SYS_ARCH=arch
 
-# logging
-bash 2>&1 | tee ~/batocera.log
 
 # Download zerotier
 if [ $SYS_ARCH == "aarch64" ]; then
@@ -49,6 +48,9 @@ ln -s "$DEST_DIR" "$LINK_OR_DIR"
 
 # Start Zerotier
 zerotier-one
+
+# logging
+bash 2>&1 | tee ~/batocera.log
 ```
 
 ## Use CLI
