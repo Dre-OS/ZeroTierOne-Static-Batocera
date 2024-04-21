@@ -27,7 +27,9 @@ verifyDest(){
 
 if [[ ! -d "$LINK_OR_DIR" && -d "$DEST_DIR" ]]; then 
   verifyDest
-else
+elif [[ ! -d "$LINK_OR_DIR" && ! -d "$DEST_DIR" ]]; then
   createConfig
+else
+  echo "ERROR: could not determine directories or links"
 fi
 
