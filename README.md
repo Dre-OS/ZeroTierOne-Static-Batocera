@@ -6,6 +6,8 @@ This project provides static [Zerotier-One](https://github.com/zerotier/ZeroTier
 
 *in batocera `batocera-save-overlay` is needed to save modified system files, for more info, please see: [Batocera Wiki](https://wiki.batocera.org/modify_the_system_while_it_s_running)*
 
+*For x86_64 Versions of Batocera, please use zerotier-one-x86_64.tar.gz*
+
 Download latest release:
 ```sh
 curl -LJO https://github.com/Dre-OS/ZeroTierOne-Static-Batocera/releases/latest/download/zerotier-one-aarch64.tar.gz
@@ -15,7 +17,7 @@ install it to bin:
 ```sh
 mkdir ~/bin
 tar -xzf zerotier-one-aarch64.tar.gz bin/zerotier-one -C ./bin
-install bin/* /bin
+install bin/* /usr/bin
 ```
 
 And create symlinks for zerotier-cli and zerotier-idtool:
