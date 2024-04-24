@@ -8,7 +8,7 @@ ssh root@[device ip]
 
 ## Install script 
  - Add initializing script (custom.sh)
-    * if you have a `custom.sh` already in your system folder, just copy and paste the contents anywhere in the without the shebang (!#/bin/bash)
+    * if you have a [`custom.sh`](https://github.com/Dre-OS/ZeroTierOne-Static-Batocera/blob/main/custom.sh) already in your system folder, just copy and paste the contents anywhere in the without the shebang (!#/bin/bash)
 ```sh
 curl https://raw.githubusercontent.com/Dre-OS/ZeroTierOne-Static-Batocera/main/custom.sh 
 ```
