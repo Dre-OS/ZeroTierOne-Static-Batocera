@@ -2,7 +2,7 @@
 
 LINK_OR_DIR="/var/lib/zerotier-one"
 DEST_DIR="/userdata/system/configs/zerotier"
-SYS_ARCH=$(uname -m)
+SYS_ARCH=$(arch)
 
 # Download zerotier
 if [ $SYS_ARCH = "aarch64" ]; then
