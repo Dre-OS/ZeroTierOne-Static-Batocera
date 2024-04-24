@@ -13,7 +13,14 @@ Download latest release:
 ```sh
 SYS_ARCH=$(arch) | curl -LJO https://github.com/Dre-OS/ZeroTierOne-Static-Batocera/releases/latest/download/zerotier-one-$SYS_ARCH.tar.gz
 ```
+## Removing Previous install
+remove binaries from the /usr/bin
+```sh
+cd /usr/bin
+rm zerotier-one zerotier-one zerotier-cli zerotier-idtool
 
+```
+## Update
 install it to bin:
 ```sh
 mkdir ~/bin
