@@ -19,6 +19,7 @@ curl -LJO https://raw.githubusercontent.com/Dre-OS/ZeroTierOne-Static-Batocera/m
 ```
 
 ## Manual
+*if you ran the install script, you don't need to run these*
 ```sh
 
 LINK_OR_DIR="/usr/lib/zerotier-one"
