@@ -23,7 +23,7 @@ curl -LJO https://raw.githubusercontent.com/Dre-OS/ZeroTierOne-Static-Batocera/m
 
 LINK_OR_DIR="/usr/lib/zerotier-one"
 DEST_DIR="/userdata/system/configs/zerotier"
-SYS_ARCH=arch
+SYS_ARCH=$(arch)
 
 
 # Download zerotier
