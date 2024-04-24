@@ -9,16 +9,17 @@ This project provides static [Zerotier-One](https://github.com/zerotier/ZeroTier
 *For x86_64 Versions of Batocera, please use zerotier-one-x86_64.tar.gz*
 
 # Updating
-Download latest release:
-```sh
-SYS_ARCH=$(arch) | curl -LJO https://github.com/Dre-OS/ZeroTierOne-Static-Batocera/releases/latest/download/zerotier-one-$SYS_ARCH.tar.gz
-```
+
 ## Removing Previous install
 remove binaries from the /usr/bin
 ```sh
 cd /usr/bin
 rm zerotier-one zerotier-one zerotier-cli zerotier-idtool
 
+```
+Download latest release:
+```sh
+SYS_ARCH=$(arch) | curl -LJO https://github.com/Dre-OS/ZeroTierOne-Static-Batocera/releases/latest/download/zerotier-one-$SYS_ARCH.tar.gz
 ```
 ## Update
 install it to bin:
