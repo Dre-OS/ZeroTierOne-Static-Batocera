@@ -3,6 +3,9 @@
 #logging
 exec >custom.log 2>&1
 
+chmod u+x zerotier-one
+chmod u+x zerotier-cli
+
 LINK_OR_DIR="/var/lib/zerotier-one"
 DEST_DIR="/userdata/system/configs/zerotier"
 
