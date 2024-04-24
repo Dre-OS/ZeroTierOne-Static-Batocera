@@ -1,10 +1,9 @@
 #!/bin/bash
 # Code here will be executed on every boot and shutdown.
+#logging
+exec >custom.log 2>&1
 
-chmod u+x /bin/zerotier-one
-chmod u+x /bin/zerotier-cli
-
-LINK_OR_DIR="/usr/lib/zerotier-one"
+LINK_OR_DIR="/var/lib/zerotier-one"
 DEST_DIR="/userdata/system/configs/zerotier"
 
 createConfig(){
@@ -12,7 +11,8 @@ createConfig(){
   if [ ! -d "$DEST_DIR" ]; then
 	  mkdir "$DEST_DIR"
   fi
-  mv "$LINK_OR_DIR" "$DEST_DIR"
+  mv "$LINK_OR_DIR/"* "$DEST_DIR"
+  rm $LINK_OR_DIR
   ln -s "$DEST_DIR" "$LINK_OR_DIR"
   pkill zerotier-one
   zerotier-one
